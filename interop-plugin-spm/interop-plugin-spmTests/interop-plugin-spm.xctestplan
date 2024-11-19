@@ -1,0 +1,24 @@
+{
+  "configurations" : [
+    {
+      "id" : "3EA6F59B-C6C6-4C64-974C-5997831FC6F8",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:interop-plugin-spm.xcodeproj",
+        "identifier" : "F791F47B2CECAD200016F2BE",
+        "name" : "interop-plugin-spmTests"
+      }
+    }
+  ],
+  "version" : 1
+}

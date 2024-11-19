@@ -1,0 +1,16 @@
+PODS:
+  - interop-plugin-spm (1.0.0)
+
+DEPENDENCIES:
+  - interop-plugin-spm (from `./`)
+
+EXTERNAL SOURCES:
+  interop-plugin-spm:
+    :path: "./"
+
+SPEC CHECKSUMS:
+  interop-plugin-spm: d8abea7370d649e4cae4fdc288e913f38837f4e1
+
+PODFILE CHECKSUM: d7b31e0d2dc860036e6f503701b81efe81abb9ef
+
+COCOAPODS: 1.15.2

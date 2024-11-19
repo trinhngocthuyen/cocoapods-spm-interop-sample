@@ -1,0 +1,15 @@
+{
+  "originHash" : "28fac3843ca88fa2d3e10985fd41d29b2ec00069c3a49abc9ac522b1260cc53a",
+  "pins" : [
+    {
+      "identity" : "network-monitor-ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Farfetch/network-monitor-ios.git",
+      "state" : {
+        "revision" : "547f8c46d8e80eb0b93e87e53ff9a332704cbd34",
+        "version" : "12.1.0"
+      }
+    }
+  ],
+  "version" : 3
+}
