@@ -1,3 +1,11 @@
+GIT
+  remote: https://github.com/trinhngocthuyen/cocoapods-spm
+  revision: 25b835fca6ab7ce1f2d74eba4ea4d96f02da0d13
+  branch: main
+  specs:
+    cocoapods-spm (0.1.7)
+      xcodeproj (>= 1.23.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -61,8 +69,6 @@ GEM
     cocoapods-plugins (1.0.0)
       nap
     cocoapods-search (1.0.1)
-    cocoapods-spm (0.1.6)
-      xcodeproj (>= 1.23.0)
     cocoapods-trunk (1.6.0)
       nap (>= 0.8, < 2.0)
       netrc (~> 0.11)
@@ -115,7 +121,7 @@ PLATFORMS
 
 DEPENDENCIES
   cocoapods (= 1.15.2)
-  cocoapods-spm (= 0.1.6)
+  cocoapods-spm!
 
 BUNDLED WITH
    2.5.21

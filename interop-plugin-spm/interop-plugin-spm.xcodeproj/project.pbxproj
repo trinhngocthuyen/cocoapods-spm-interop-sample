@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B860985C31FC874F165C20B /* Pods_interop_plugin_spmTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9B6C33BA770B0B0C26E754B /* Pods_interop_plugin_spmTests.framework */; };
 		1A75339EC2788AB0EF32F97C /* Pods_interop_plugin_spm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60483C26536BC805D6B2306A /* Pods_interop_plugin_spm.framework */; };
 		F791F47D2CECAD200016F2BE /* interop_plugin_spm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F791F4742CECAD1E0016F2BE /* interop_plugin_spm.framework */; };
 /* End PBXBuildFile section */
@@ -24,7 +25,10 @@
 /* Begin PBXFileReference section */
 		0E3C6D1D088755128B40B65E /* Pods-interop-plugin-spm.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-interop-plugin-spm.debug.xcconfig"; path = "Target Support Files/Pods-interop-plugin-spm/Pods-interop-plugin-spm.debug.xcconfig"; sourceTree = "<group>"; };
 		4C15084D0BC19B85B5348356 /* Pods-interop-plugin-spm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-interop-plugin-spm.release.xcconfig"; path = "Target Support Files/Pods-interop-plugin-spm/Pods-interop-plugin-spm.release.xcconfig"; sourceTree = "<group>"; };
+		5017C1A050603FFFABB517E8 /* Pods-interop-plugin-spmTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-interop-plugin-spmTests.debug.xcconfig"; path = "Target Support Files/Pods-interop-plugin-spmTests/Pods-interop-plugin-spmTests.debug.xcconfig"; sourceTree = "<group>"; };
 		60483C26536BC805D6B2306A /* Pods_interop_plugin_spm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_interop_plugin_spm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A7167D26C59FC8DF6273977 /* Pods-interop-plugin-spmTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-interop-plugin-spmTests.release.xcconfig"; path = "Target Support Files/Pods-interop-plugin-spmTests/Pods-interop-plugin-spmTests.release.xcconfig"; sourceTree = "<group>"; };
+		C9B6C33BA770B0B0C26E754B /* Pods_interop_plugin_spmTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_interop_plugin_spmTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F791F4742CECAD1E0016F2BE /* interop_plugin_spm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = interop_plugin_spm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F791F47C2CECAD200016F2BE /* interop-plugin-spmTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "interop-plugin-spmTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -50,6 +54,8 @@
 		};
 		F791F4802CECAD200016F2BE /* interop-plugin-spmTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+			);
 			path = "interop-plugin-spmTests";
 			sourceTree = "<group>";
 		};
@@ -69,6 +75,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F791F47D2CECAD200016F2BE /* interop_plugin_spm.framework in Frameworks */,
+				0B860985C31FC874F165C20B /* Pods_interop_plugin_spmTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				60483C26536BC805D6B2306A /* Pods_interop_plugin_spm.framework */,
+				C9B6C33BA770B0B0C26E754B /* Pods_interop_plugin_spmTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -88,6 +96,8 @@
 			children = (
 				0E3C6D1D088755128B40B65E /* Pods-interop-plugin-spm.debug.xcconfig */,
 				4C15084D0BC19B85B5348356 /* Pods-interop-plugin-spm.release.xcconfig */,
+				5017C1A050603FFFABB517E8 /* Pods-interop-plugin-spmTests.debug.xcconfig */,
+				9A7167D26C59FC8DF6273977 /* Pods-interop-plugin-spmTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -151,6 +161,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F791F48A2CECAD200016F2BE /* Build configuration list for PBXNativeTarget "interop-plugin-spmTests" */;
 			buildPhases = (
+				B5D6115946AA353369DB0A92 /* [CP] Check Pods Manifest.lock */,
 				F791F4782CECAD200016F2BE /* Sources */,
 				F791F4792CECAD200016F2BE /* Frameworks */,
 				F791F47A2CECAD200016F2BE /* Resources */,
@@ -240,6 +251,28 @@
 			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-interop-plugin-spm-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B5D6115946AA353369DB0A92 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-interop-plugin-spmTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -465,6 +498,7 @@
 		};
 		F791F48B2CECAD200016F2BE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5017C1A050603FFFABB517E8 /* Pods-interop-plugin-spmTests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -479,6 +513,7 @@
 		};
 		F791F48C2CECAD200016F2BE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9A7167D26C59FC8DF6273977 /* Pods-interop-plugin-spmTests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;

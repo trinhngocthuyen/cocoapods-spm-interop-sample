@@ -10,8 +10,12 @@ plugin 'cocoapods-spm'
 
 # Pods used in multiple targets
 
-target 'interop-plugin-spm' do
+# NetworkMonitor is to be use in both main & test targets
+spm_pkg 'NetworkMonitor', :url => 'https://github.com/Farfetch/network-monitor-ios.git', :version => '12.1.0'
 
+target 'interop-plugin-spm' do
     pod 'interop-plugin-spm', :path => './'
-    spm_pkg 'NetworkMonitor', :url => 'https://github.com/Farfetch/network-monitor-ios.git', :version => '12.1.0'
+end
+
+target 'interop-plugin-spmTests' do
 end
